@@ -1,0 +1,90 @@
+<div class="card my-5">
+  <div class="card-body">
+    <form [formGroup]="userForm">
+      <div class="form-group">
+        <label>Login &#42;</label>
+        <input class="form-control"
+               formControlName="userLogin"
+               placeholder="Enter your login"
+               type="text">
+        <span *ngIf="loginField.hasError('required') && loginField.touched">Login is required</span>
+        <span *ngIf="loginField.hasError('minlength')">Login is too short</span>
+        <span *ngIf="loginField.hasError('maxlength')">Login is too long</span>
+      </div>
+      <div class="form-group">
+        <label>Name</label>
+        <input class="form-control"
+               formControlName="userName"
+               placeholder="Enter your name"
+               type="text">
+        <span *ngIf="nameField.hasError('minlength')">Name is too short</span>
+        <span *ngIf="nameField.hasError('maxlength')">Name is too long</span>
+      </div>
+
+      <div class="form-group">
+        <label>Surname</label>
+        <input class="form-control"
+               formControlName="userSurname"
+               placeholder="Enter your surname"
+               type="text">
+        <span *ngIf="surnameField.hasError('minlength')">Surname is too short</span>
+        <span *ngIf="surnameField.hasError('maxlength')">Surname is too long</span>
+      </div>
+
+      <div class ="card border-dark mb-3">
+      <div class="form-group">
+        <label>Password &#42;</label>
+        <i class="fa fa-eye" (click)="password()"></i>
+        <input class="form-control"
+               formControlName="userPassword"
+               placeholder="Enter your password"
+               [type]="show ? 'text' : 'password'" />
+        <span *ngIf="passwordField.hasError('required') && passwordField.touched">Password is required</span>
+        <span *ngIf="passwordField.hasError('minlength')">Password is too short</span>
+        <span *ngIf="passwordField.hasError('maxlength')">Password is too long</span>
+      </div>
+
+      <div class="form-group">
+        <label>Confirm password &#42;</label>
+        <input class="form-control"
+               formControlName="userConfirmPassword"
+               placeholder="Enter your password"
+               [type]="show ? 'text' : 'password'" />
+        <span *ngIf="confirmPasswordField.hasError('required') && confirmPasswordField.touched">Password is required</span>
+        <span *ngIf="confirmPasswordField.hasError('minlength')">Password is too short</span>
+        <span *ngIf="confirmPasswordField.hasError('maxlength')">Password is too long</span>
+        <span *ngIf="!passwordFieldsAreEqual() && passwordField.valid && passwordField.touched">Passwords are different.</span>
+      </div>
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input class="form-control"
+               formControlName="email"
+               placeholder="Enter your email address"
+               type="text">
+        <span *ngIf="emailField.hasError('email')">Email is invalid</span>
+      </div>
+
+      <div class="form-group">
+        <label>Age</label>
+
+        <input class="form-control"
+               formControlName="age"
+               placeholder="Enter your age"
+               type="number">
+        <span *ngIf="ageField.hasError('min')">Age is too low</span>
+        <span *ngIf="ageField.hasError('max')">Age is too high</span>
+      </div>
+
+      <button [disabled]="!userForm.valid"
+              (click)="createUser()"
+              class="btn btn-info"
+              type="submit">Submit</button>
+
+      <button (click)="rand20User()"
+              class="btn btn-info"
+              type="button">Random 20 Users</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <nav class="main-nav">
+    <ul>
+      <a>Profile Info</a>
+    </ul>
+  </nav>
+  <article class="content">
+    <p>ID: {{this.user?.id}}</p>
+    <p>Login: {{this.user?.userLogin}}</p>
+    <p>Name: {{this.user?.userName}}</p>
+    <p>Surname: {{this.user?.userSurname}}</p>
+    <p>Email: {{this.user?.email}}</p>
+    <p *ngIf="(user?.age>0)">Age: {{this.user?.age}}</p>
+  </article>
+</div>

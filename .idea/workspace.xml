@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="46cdfb46-58df-4b3e-ac8a-37e44aed0e96" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="dev" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="POLON-4" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1OyBr6Q8ZtIwtEwxfRLlB6FIRlg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/polon-frontend/node_modules/protractor" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="ts.external.directory.path" value="E:\Java\polon\polon-frontend\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="OPEN_URL_DIALOG">
+      <recent name="https://github.com/mrin9/Angular-SpringBoot-REST-JWT.git" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bitbucket.tribute.polon.repo" />
+      <recent name="com.bitbucket.tribute.polon.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Java\polon" />
+      <recent name="E:\Java\polon\polon-core" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PolonApplication">
+    <configuration name="E2E Tests (polon-frontend)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/polon-frontend/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-package value="$PROJECT_DIR$/polon-frontend/node_modules/protractor" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="PolonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="polon" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bitbucket.tribute.polon.PolonApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/polon-frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46cdfb46-58df-4b3e-ac8a-37e44aed0e96" name="Default Changelist" comment="" />
+      <created>1564940152910</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1564940152910</updated>
+      <workItem from="1564940163868" duration="4226000" />
+      <workItem from="1564946271165" duration="535000" />
+      <workItem from="1564947115645" duration="6405000" />
+      <workItem from="1565552240916" duration="781000" />
+      <workItem from="1565803986747" duration="1525000" />
+      <workItem from="1566136711438" duration="788000" />
+      <workItem from="1566164050609" duration="1768000" />
+      <workItem from="1566921661521" duration="61000" />
+      <workItem from="1566921730723" duration="12000" />
+      <workItem from="1566921756474" duration="122000" />
+      <workItem from="1566921945867" duration="56000" />
+      <workItem from="1566922054844" duration="68000" />
+      <workItem from="1566922126571" duration="35000" />
+      <workItem from="1566922165575" duration="13000" />
+      <workItem from="1566922194957" duration="8000" />
+      <workItem from="1567338951153" duration="7828000" />
+      <workItem from="1567870921054" duration="2573000" />
+      <workItem from="1567874325642" duration="9000" />
+      <workItem from="1567875920714" duration="1316000" />
+      <workItem from="1567881589144" duration="7884000" />
+      <workItem from="1567972381743" duration="6779000" />
+      <workItem from="1568325187698" duration="472000" />
+      <workItem from="1568325703388" duration="313000" />
+      <workItem from="1568929532784" duration="1323000" />
+      <workItem from="1569259057843" duration="1390000" />
+      <workItem from="1570020103906" duration="8929000" />
+      <workItem from="1570123226304" duration="6395000" />
+      <workItem from="1570272980644" duration="95000" />
+      <workItem from="1570274268170" duration="31536000" />
+      <workItem from="1570801221476" duration="9394000" />
+      <workItem from="1572718316713" duration="4265000" />
+      <workItem from="1573075335353" duration="1386000" />
+      <workItem from="1573776180664" duration="56000" />
+    </task>
+    <task id="LOCAL-00001" summary="Configure spring application">
+      <created>1564942201510</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1564942201510</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Configure spring application">
+      <created>1564942645103</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1564942645103</updated>
+    </task>
+    <task id="LOCAL-00003" summary="After merge">
+      <created>1565804847049</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1565804847049</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Configure spring application" />
+    <MESSAGE value="After merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="After merge" />
+  </component>
+</project>

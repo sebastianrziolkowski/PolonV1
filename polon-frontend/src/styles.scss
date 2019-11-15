@@ -1,0 +1,87 @@
+@import './app/data/variables.scss';
+
+* {
+    margin: initial;
+    box-sizing: border-box;
+    border: initial;
+    outline: initial;
+
+    font: inherit;
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    header {
+        margin-bottom: 2rem;
+
+        h3 {
+            text-align: center;
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size: $large;
+            letter-spacing: .1rem;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+
+        %formField {
+            margin-top: 1.5rem;
+            padding: 0 1rem;
+            width: 100%;
+
+            font-family: Verdana, sans-serif;
+            line-height: 3rem;
+            font-size: $medium;
+            letter-spacing: .1rem;
+        }
+
+        input {
+            @extend %formField;
+
+            border: .1rem solid #999;
+
+            &:first-of-type { margin-top: initial; }
+        }
+
+        div {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+
+            span {
+                font-family: 'Trebuchet MS', sans-serif;
+                font-size: $small;
+                color: red;
+            }
+        }
+
+        button {
+            @extend %formField;
+
+            margin: 2.5rem auto 1.5rem auto;
+            width: 70%;
+        }
+    }
+
+    a {
+        text-decoration: initial;
+        font-family: 'Trebuchet MS', sans-serif;
+        font-size: $medium;
+        color: initial;
+    }
+}

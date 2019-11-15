@@ -1,0 +1,24 @@
+<div class="container">
+  <ul class="nav nav-pills">
+    <li  class="list-inline-item" ><a *ngIf="!(loginService?.isUserLoggedIn())" routerLinkActive="active" routerLink="/login" class="btn btn-info">Login</a></li>
+    <li  class="list-inline-item" ><a *ngIf="loginService?.isUserLoggedIn()" routerLinkActive="active" routerLink="/" class="btn btn-info">Main Page</a></li>
+    <li class="userInfo">
+      <a class="btn btn-info" *ngIf="!userInSessionStorageIsEmpty() && loginService?.isUserLoggedIn()" routerLinkActive="active" routerLink="/profile-details">Profile</a>
+      <a  class="list-inline-item" ><a *ngIf="loginService?.isUserLoggedIn()" routerLinkActive="active" routerLink="/logout" class="btn btn btn-danger">Logout</a></a>
+    </li>
+  </ul>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card bg-dark my-5">
+        <div class="card-body">
+          <h2 class="card-title text-center text-white py-3">{{ title }}</h2>
+          <ul class="text-center list-inline py-3">
+            <li class="list-inline-item"><a *ngIf="(loginService?.isUserLoggedIn() && roleService.userIsAdmin())" routerLink="/users" class="btn btn-primary">List Users</a></li>
+            <li class="list-inline-item"><a *ngIf="(loginService?.isUserLoggedIn() && roleService.userIsAdmin())" routerLink="/adduser" class="btn btn-primary">Add User</a></li>
+          </ul>
+        </div>
+      </div>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

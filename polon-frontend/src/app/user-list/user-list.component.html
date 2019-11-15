@@ -1,0 +1,89 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+
+      <tr>
+        <th scope="col">
+          <div class="wrapper">
+            <div class="box header"><i aria-hidden="true" (click)="sortBy('ASC', 'id')" class="fa fa-sort-desc"></i></div>
+            <div class="box sidebar">#</div>
+            <div class="box content"><i class="fa fa-sort-asc" (click)="sortBy('DESC', 'id')" aria-hidden="true"></i></div>
+          </div>
+        </th>
+
+        <th scope="col">
+          <div class="wrapper">
+            <div class="box header"><i aria-hidden="true" (click)="sortBy('ASC', 'userLogin')" class="fa fa-sort-desc"></i></div>
+            <div class="box sidebar">Login</div>
+            <div class="box content"><i class="fa fa-sort-asc" (click)="sortBy('DESC', 'userLogin')" aria-hidden="true"></i></div>
+          </div>
+        </th>
+
+        <th scope="col">
+          <div class="wrapper">
+            <div class="box header"><i aria-hidden="true" (click)="sortBy('ASC', 'userName')" class="fa fa-sort-desc"></i></div>
+            <div class="box sidebar">Name</div>
+            <div class="box content"><i class="fa fa-sort-asc" (click)="sortBy('DESC', 'userName')" aria-hidden="true"></i></div>
+          </div>
+        </th>
+
+        <th scope="col">
+          <div class="wrapper">
+            <div class="box header"><i aria-hidden="true" (click)="sortBy('ASC', 'userSurname')" class="fa fa-sort-desc"></i></div>
+            <div class="box sidebar">Surname</div>
+            <div class="box content"><i class="fa fa-sort-asc" (click)="sortBy('DESC', 'userSurname')" aria-hidden="true"></i></div>
+          </div>
+        </th>
+
+        <th>Password</th>
+
+        <th scope="col">
+          <div class="wrapper">
+            <div class="box header"><i aria-hidden="true" (click)="sortBy('ASC', 'email')" class="fa fa-sort-desc"></i></div>
+            <div class="box sidebar">Email</div>
+            <div class="box content"><i class="fa fa-sort-asc" (click)="sortBy('DESC', 'email')" aria-hidden="true"></i></div>
+          </div>
+        </th>
+
+        <th scope="col">
+          <div class="wrapper">
+            <div class="box header"><i aria-hidden="true" (click)="sortBy('ASC', 'age')" class="fa fa-sort-desc"></i></div>
+            <div class="box sidebar">Age</div>
+            <div class="box content"><i class="fa fa-sort-asc" (click)="sortBy('DESC', 'age')" aria-hidden="true"></i></div>
+          </div>
+        </th>
+        <th scope="col">Action</th>
+      </tr>
+      </thead>
+
+
+      <tr [formGroup]="filterForm">
+        <td><input type="text" formControlName="id"></td>
+        <td><input type="text" formControlName="login"></td>
+        <td><input type="text" formControlName="name"></td>
+        <td><input type="text" formControlName="surname"></td>
+        <td class="paz">---</td>
+        <td><input type="text" formControlName="email"></td>
+        <td><input type="text" formControlName="age"></td>
+        <td><i class="fa fa-filter fa-2x" aria-hidden="true" (click)="cleanFilter()"></i></td>
+      </tr>
+
+      <tr *ngFor="let user of filteredUser">
+        <td><i class="fa fa-user-secret" [hidden]="!(user.role.toString().includes('ADMIN'))"></i>{{ user.id }}</td>
+        <td>{{ user.userLogin }}</td>
+        <td>{{ user.userName }}</td>
+        <td>{{ user.userSurname }}</td>
+        <td>{{ user.userPassword }}</td>
+        <td><a href="mailto:{{ user.email }}">{{ user.email }}</a></td>
+        <td>{{ user.age }}</td>
+        <td>
+        <div [hidden]="!roleService.userIsAdmin()">
+          <i [routerLink]="'/edituser/'+user.id" class="fa fa-cog fa-2x"></i>
+            <i (click)="deleteUser(user.id)" class="fa fa-trash-o fa-2x"></i>
+        </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
